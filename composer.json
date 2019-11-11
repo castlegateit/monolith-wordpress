@@ -1,0 +1,22 @@
+{
+    "name": "castlegate/monolith-wordpress",
+    "description": "Basic utilities and functions for WordPress development.",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "John Hughes",
+            "email": "john@castlegateit.co.uk"
+        }
+    ],
+    "require": {
+        "castlegate/monolith-core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Castlegate\\Monolith\\WordPress\\": "classes"
+        },
+        "files": [
+            "functions.php"
+        ]
+    }
+}

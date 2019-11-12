@@ -16,7 +16,7 @@ Monolith WordPress is available on [Packagist](https://packagist.org/) and can b
 
 *   `pagination($args = [])` Wrapper for `paginate_links()` with sensible default values.
 
-*   `embedSvg($file, $title, $nofill)` Similar to the function of the same name in `Core` described above, but relative file paths are assumed to be in the active theme directory.
+*   `embedSvg($file, $args = [])` Similar to the function of the same name in `Core` described above, but relative file paths are assumed to be in the active theme directory.
 
 *   `send404()` Send an immediate 404 response and display the 404 template, overriding all other responses and output.
 

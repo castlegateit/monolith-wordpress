@@ -129,10 +129,11 @@ function labels($single, $plural = null)
  * paths start in the WordPress theme directory.
  *
  * @param string $file
- * @param string $title
- * @param boolean $nofill
+ * @param array $args
+ * @param null $deprecated
+ * @return ScalableVectorGraphic|string
  */
-function embedSvg($file, $title = false, $nofill = false)
+function embedSvg($file, $args = [], $deprecated = null)
 {
     if (!\Castlegate\Monolith\Core\startsWith($file, '/')) {
         $file = get_stylesheet_directory() . '/' . $file;
@@ -142,7 +143,7 @@ function embedSvg($file, $title = false, $nofill = false)
         $file = $file . '.svg';
     }
 
-    return \Castlegate\Monolith\Core\embedSvg($file, $title, $nofill);
+    return \Castlegate\Monolith\Core\embedSvg($file, $args, $deprecated);
 }
 
 /**

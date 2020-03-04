@@ -17,49 +17,49 @@ class Post
      *
      * @var WP_Post
      */
-    private $post;
+    protected $post;
 
     /**
      * Post ID
      *
      * @var int
      */
-    private $id;
+    protected $id;
 
     /**
      * Post title
      *
      * @var string
      */
-    private $title;
+    protected $title;
 
     /**
      * Post URL
      *
      * @var string
      */
-    private $url;
+    protected $url;
 
     /**
      * Post content
      *
      * @var string
      */
-    private $content;
+    protected $content;
 
     /**
      * Post excerpt
      *
      * @var string
      */
-    private $excerpt;
+    protected $excerpt;
 
     /**
      * Post featured image as Image instance
      *
      * @var Image
      */
-    private $image;
+    protected $image;
 
     /**
      * Constructor

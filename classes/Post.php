@@ -97,7 +97,7 @@ class Post
      * @param mixed $post
      * @return void
      */
-    private function setPost($post)
+    protected function setPost($post)
     {
         $post_object = get_post($post);
 
@@ -117,7 +117,7 @@ class Post
      *
      * @return void
      */
-    private function setPostContent()
+    protected function setPostContent()
     {
         $this->content = apply_filters(
             'the_content',
@@ -140,7 +140,7 @@ class Post
      *
      * @return void
      */
-    private function setPostExcerpt()
+    protected function setPostExcerpt()
     {
         $excerpt = $this->post->post_excerpt;
         $length = apply_filters('excerpt_length', 55);

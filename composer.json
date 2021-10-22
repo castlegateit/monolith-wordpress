@@ -1,7 +1,7 @@
 {
     "name": "castlegate/monolith-wordpress",
     "description": "Basic utilities and functions for WordPress development.",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
             "name": "John Hughes",
